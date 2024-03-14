@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@font-face {
+    font-family: "FontRegular";
+    src: local("FontRegular"), url("./fonts/Poppins/Regular.ttf") format("truetype");
   }
-}
+  
+  @font-face {
+    font-family: "FontBold";
+    src: local("FontBold"), url("./fonts/Poppins/Bold.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "FontLight";
+    src: local("FontLight"), url("./fonts/Poppins/Light.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "FontSemiBold";
+    src: local("FontSemiBold"), url("./fonts/Poppins/SemiBold.ttf") format("truetype");
+  }
+  
+  .font-bold{
+    font-family: "FontBold" !important;
+  }
+  
+  .font-regular{
+    font-family: "FontRegular" !important;
+  }
+  
+  .font-light{
+    font-family: "FontLight" !important;
+  }
+  
+  .font-semi-bold{
+    font-family: "FontSemiBold" !important;
+  }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.topBar{
+    background-color: green;
+}
+.flex-container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: nowrap;
+}
+.download-text{
+    display: flex;
+    flex-direction: column;
+    font-family: "FontRegular";
+    width: 400px;
+    text-align: left;
+    padding-left: 100px;
+    margin-left: 600px;
+    margin-top: 380px;
+    background-color: rgb(255, 255, 255);
+}
+.center-image{
+    margin-top: 280px;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-left: 10px; 
+    background-color: rgb(255, 255, 255); 
+     
+}
+.image-div{
+    margin-top: 180px;
+    padding-left: 80px;
+    
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
